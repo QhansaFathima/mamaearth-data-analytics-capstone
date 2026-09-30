@@ -1,0 +1,8 @@
+Situation:
+Mamaearth's data pipeline processed a total uncleaned baseline revenue of ₹99,860.20 across all raw orders. Following rigorous data cleaning, deduplication, and anomaly handling, the verified clean total revenue stands at ₹97,358.30.
+
+Complication:
+Operational risks severely threaten profitability, driven primarily by payment methods and volume anomalies. Cash on Delivery (COD) orders exhibit an alarming return rate of 44.4%—roughly three times higher than card payments. When segmented by geography, COD orders originating from Tier-2 cities spike to a highest-risk return rate of 54.5%. Furthermore, initial time series trends were distorted by bulk volume outliers, falsely highlighting January as the top revenue month.
+
+Resolution:
+Precise financial reconciliation identified a duplicate-driven reconciliation delta of ₹2,501.90 resulting from duplicate order removal. Once these outliers are filtered out, January's apparent revenue of ₹29,582.10 normalizes to ₹11,637.10, firmly establishing March as the true peak month with ₹20,318.90 in revenue. Strategic policy adjustments targeting COD in Tier-2 regions are recommended immediately.
