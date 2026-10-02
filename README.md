@@ -8,6 +8,7 @@ This repository contains the complete three-part data analytics pipeline for Mam
 - `sql/`: Contains database schema (`schema.sql`), seed data (`seed_data.sql`), and reporting queries (`reports.sql`).
 - `data/`: Source CSV files (`orders.csv`, `customers.csv`, `products.csv`).
 - `analysis/`: Python scripts for data cleaning, EDA (`clean_and_eda.py`), and visualization (`visualize.py`).
+- `visualizations/`: Generated analytical charts (`return_rate_by_payment.png`, `monthly_revenue_trend.png`).
 - `narrator/`: GenAI narrative script (`generate_narrative.py`), findings export (`findings.json`), and sample outputs (`sample_output.txt`).
 
 ---
@@ -25,3 +26,9 @@ Run the independent Python pipeline to clean data, handle anomalies, reconcile r
 ```bash
 python analysis/clean_and_eda.py
 python analysis/visualize.py
+
+### 3. GenAI Insight Narrator (Part 3)
+Run the automated narrative script to generate the executive report and execute the numeric accuracy checklist:
+```bash
+python narrator/generate_narrative.py
+

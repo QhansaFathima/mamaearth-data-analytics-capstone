@@ -1,6 +1,9 @@
 import os
 import json
-
+import importlib
+genai = None
+types = None
+HAS_GENAI = False
 # Safe optional imports for Google GenAI SDK
 try:
     from google import genai
